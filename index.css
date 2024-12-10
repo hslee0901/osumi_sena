@@ -42,12 +42,7 @@ header {
 
     margin-bottom: 0;
 }
-header h1 {
-    margin: 0; /* 기본 마진 제거 */
-    font-size: 24px; /* 제목 크기 설정 */
 
-    text-align: center; /* 제목을 중앙 정렬 */
-}
 header h3{
     font-size:24px
 }
@@ -213,7 +208,8 @@ footer p{
 }
 .title {
     margin: 0; /* 기본 마진 제거 */
-    font-size: 24px; /* 제목 크기 설정 */
+    font-size: 30px; /* 제목 크기 설정 */
+    margin-left: 50px;
 }
 
 
