@@ -16,12 +16,10 @@ body {
 }
 
 .bg-video__content {
-
-
     width: auto;
     height: auto;
     z-index: -1;
-    transform: translate(-30%, -30%);
+
 }
 
 header, main, footer {
