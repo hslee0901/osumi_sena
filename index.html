@@ -14,27 +14,54 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gaegu:wght@700&family=Pacifico&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/f10167bfad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
- 
+
     <header>
-        <div class="title">
-            <h1>Osumi Sena`s Profile</h1>
+        <div class="left-container">
+        <div class="dropdown">
+            <button class="dropdown-button">メニュー</button>
+            <div class="dropdown-content">
+                <a class="nav-link" href="index.html"><i class="fa-solid fa-house" style="color: #8665e6;"></i> ホーム</a>
+                <a class="nav-link" href="about.html"> <i class="fa-solid fa-gamepad" style="color: #3676dd;"></i> 趣味</a>
+                <a class="nav-link" href="intro.html"><i class="fa-solid fa-heart" style="color: #ed0c0c;"></i></i> 好きなもの</a>
+            </div>
         </div>
- 
+        <div class="title">
+            <h1>大角静奈の紹介</h1>
+        </div>
+            <div class="lang">
+                <a href="index.html" id="jp-link" class="lang-link">JP</a>
+                <span class="separator">/</span>
+                <a href="index-en.html" id="eng-link" class="lang-link">ENG</a>
+            </div>
+    
+    </div>
+
+        <div class="sound">
         <div class="music-player">
-            <h2>Selena Gomez</h2>
-            <h3>-Who Says-</h3>
+            <h2>Selena Gomez -Who Says-</h2>
             <audio controls>
                 <source src="./video/who-says.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
+    </div>
     </header>
-    <main>     
+    
+    <main>
+        <div class="main-music">
+            <h3>Music Play</h3>
+            <p>Selena Gomez -Who Says-</p>
+            <audio controls>
+                <source src="./video/who-says.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>   
         <div class="card" onclick="this.classList.toggle('flipped')">
             <div class="face front">
                 <img src="./img/lhs.png" alt="소개3" />
@@ -46,10 +73,11 @@
                 <p>専攻： 外国語学部  英米語学科 </p>
                 <p>夢: プロゴルファー</p>
                 <p>趣味: ゴルフ</p>
-                <p>好きなこと、セレーナゴメス、ふぐ、生タコ</p>
+                <p>人生のポイント: 疲れている時は休む
+                <p>座右の銘: 人には優しく自分には厳しく(大変な時は無理な時が大半だけどね)
+                </p>
                 <div class="link">
-                    <a href="https://www.instagram.com/hlso.031029/profilecard/?igsh=aXpudncwd21hbHJi" class="social-link" id="instagram-link"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                    <a href="https://github.com/hslee0901" class="social-link" id="github-link"><i class="fa-brands fa-github"></i>Github</a>
+                    <a href="https://www.instagram.com/hlso.021001/" class="social-link" id="instagram-link" class="link-js"><i class="fa-brands fa-instagram"></i>Instagram</a>
                 </div>
             </div>
         </div>
@@ -59,12 +87,10 @@
 
     <footer>
         <div class="footer-word">
-        <p>Lee Hyeonseong</p>
+        <p>Made by イヒョンソン</p>
         <p>2024. All rights reserved.</p>
     </div>
     </footer>
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script src="./index.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
