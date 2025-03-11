@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI判定プログラム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI判定プログラム</h1>
+        
+        <div id="input-form">
+            <div class="form-group">
+                <label for="height">身長:</label>
+                <input type="text" id="height" placeholder="身長を入力してください">
+                <select id="height-unit">
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                </select>
+                <div id="height-error" class="error"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="weight">体重:</label>
+                <input type="text" id="weight" placeholder="体重を入力してください">
+                <select id="weight-unit">
+                    <option value="kg">kg</option>
+                    <option value="g">g</option>
+                </select>
+                <div id="weight-error" class="error"></div>
+            </div>
+            <div class="btn-group">
+                <button id="calculate">BMIを計算する</button>
+            </div>
+        </div>
+        
+        <div id="result">
+            <h2>結果</h2>
+            <p>あなたのBMIは <span id="bmi-value"></span> です。</p>
+            <p><strong>判定: <span id="bmi-category"></span></strong></p>
+        </div>
+        
+        <div id="bmi-standards">
+            <h2>BMI評価基準</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BMI値</th>
+                        <th>判定</th>
+                        <th>健康リスク</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="underweight">
+                        <td>18.5未満</td>
+                        <td>低体重（痩せ型）</td>
+                        <td>栄養不足のリスク</td>
+                    </tr>
+                    <tr class="normal">
+                        <td>18.5〜24.9</td>
+                        <td>普通体重</td>
+                        <td>標準的なリスク</td>
+                    </tr>
+                    <tr class="overweight">
+                        <td>25.0〜29.9</td>
+                        <td>肥満（1度）</td>
+                        <td>やや高いリスク</td>
+                    </tr>
+                    <tr class="obese">
+                        <td>30.0以上</td>
+                        <td>肥満（2度以上）</td>
+                        <td>高いリスク</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">※ 世界保健機関（WHO）による基準</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
